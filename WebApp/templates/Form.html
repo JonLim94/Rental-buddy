@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <title>Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      #left-half {
+        width: 100%;
+        float: left;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: Candara, sans-serif;
+      }
+    
+
+    html,
+    body,
+    header,
+    .view {
+      height: 100%;
+    }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      #quote {
+        position:relative;
+        top: 200px;
+        /*left: 400px;*/
+      }
+      #button {
+        position:relative;
+        top: 0px;;
+        left: 0px;
+      }
+      #bottom {
+        position:relative;
+        top: 0px;;
+        left: 0px;
+      }
+
+    </style>
+</head>
+<body class="bg-light" style="background-image: url('../resources/bg4.png'); height: 80%; background-repeat: no-repeat; background-size: cover; background-position: center;background-attachment: fixed">
+  <div class="mx-auto" style="margin-top: 2% !important;">
+    <div class="container">
+      <div id="left-half">
+    <div class="py-5 text-center">
+        <form enctype = "multipart/form-data" action="/GAAction" method="post">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm"><h4 align="left">Please fill out the below form</h4></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5" align="left"><label for="name">Budget (S$/mo)</label></div>
+                </div>
+                    <div class="col-sm-7"><input type="number" class="form-control" placeholder="Sample: 1500" id="name" maxlength="6" name="name" required></div>
+                <div class="row">
+                  <div class="col-sm">&nbsp;</div>
+              </div>
+                <div align="left"><label for="name">Looking for?</label>
+                <div class="col-sm-7">
+                <input type="radio" id="House" name="Property_Type" value="Entire House" required>
+                <label for="House">Entire House</label>
+                <input type="radio" id="Room" name="Property_Type" value="Room">
+                <label for="Room">Room</label>
+              </div>
+                <div class="row">
+                    <div class="col-sm">&nbsp;</div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-5" align="left"><label for="name">Comfortable Commute Time (mins)</label>
+                    <select id="traveltime" name="traveltime">
+                      <option value="15">15</option>
+                      <option value="30">30</option>
+                      <option value="40">40</option>
+                      <option value="45">45</option>
+                      <option value="50">50</option>
+                      <option value="55">55</option>
+                      <option value="60">60</option>
+                      <option value="65">65</option>
+                      <option value="70">70</option>
+                      <option value="75">75</option>
+                    </select>
+                  </div>
+              </div>
+              <div class="row">
+                <div class="col-sm">&nbsp;</div>
+            </div>
+            <div class="row">
+              <div class="col-sm-7">Frequent Destinations (Please use postal codes. Visit <a href="/InfoPage"><FONT COLOR="#ff6289">Information Page</FONT></a> for more details)</div>
+              <div class="row"></div>
+          </div>
+          <div class="row">
+            <div class="col-sm">&nbsp;</div>
+        </div>
+              <div class="col-sm-7"><input type="number" class="form-control" placeholder="Postal Code 1" id="WorkLoc1" maxlength="7" name="WorkLoc1" required></div>
+              <div class="col-sm"></div>
+          <div class="row">
+            <div class="col-sm">&nbsp;</div>
+        </div>
+            <div class="col-sm-7"><input type="number" class="form-control" placeholder="Postal Code 2 (Optional)" id="WorkLoc2" maxlength="7" name="WorkLoc2"></div>
+            <div class="col-sm"></div>
+            <div class="row">
+              <div class="col-sm">&nbsp;</div>
+          </div>
+      <div class="row">
+      <div class="col-sm" id="button"><input type="submit" class="btn btn-outline-secondary" name="Upload"></div>
+      <div class="col-sm"></div>
+      </div>
+      <div class="row">
+      <div class="col-sm">&nbsp;</div>
+      </div>
+            <div class="row">
+            <div class="col-sm" id="bottom"><a href="/"><FONT COLOR="#ff6289">Back Home</a></div>
+            </div>
+        </form>
+    </div>
+  </div>
+</div>
+</body>
+</div>
+</body>
+<script crossorigin="anonymous"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</html>
